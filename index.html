@@ -126,7 +126,7 @@
         </div>
     </div>
 
-    <div class="video-outside" onclick="goFullscreen(this)">
+    <div class="video-outside col-md-6" onclick="goFullscreen(this)" style="margin-left: auto; margin-right: auto;">
         <video autoplay loop muted>
             <source src="1.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -146,7 +146,7 @@
         </div>
     </div>
 
-    <div class="video-outside" onclick="goFullscreen(this)">
+    <div class="video-outside col-md-6 mt-2" onclick="goFullscreen(this)" style="margin-left: auto; margin-right: auto;">
         <video autoplay loop muted>
             <source src="3.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -166,7 +166,7 @@
         </div>
     </div>
 
-    <div class="video-outside" onclick="goFullscreen(this)">
+    <div class="video-outside col-md-6" onclick="goFullscreen(this)" style="margin-left: auto; margin-right: auto;">
         <video autoplay loop muted>
             <source src="2.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -186,7 +186,7 @@
         </div>
     </div>
 
-    <div class="video-outside" onclick="goFullscreen(this)">
+    <div class="video-outside col-md-6" onclick="goFullscreen(this)" style="margin-left: auto; margin-right: auto;">
         <video autoplay loop muted>
             <source src="4.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -281,7 +281,7 @@
             const inputData = document.getElementById('inputData').value;
             const inputEmail = document.getElementById('inputEmail').value;
 
-            fetch('http://http://46.242.130.92:3000/save', {
+            fetch('http://46.242.130.92:3000/save', {
                 method: "POST", // *GET, POST, PUT, DELETE, etc.
                 mode: "no-cors", // no-cors, *cors, same-origin
                 cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
