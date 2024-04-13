@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red and White Theme</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            margin-bottom: 50px;
+        }
+
+        .container {
+            padding-top: 20px;
+        }
+
+        .logo {
+            max-width: 200px;
+            height: auto;
+        }
+
+        .description {
+            color: #fff;
+            background-color: #dc1932; /* Red color */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .container-video {
+            color: #000;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding:20px
+        }
+
+        .description-text {
+            flex: 1;
+        }
+
+        .video-container {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+            .video-container video {
+                max-width: 50%;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                margin: 0 auto;
+            }
+
+        .video-outside {
+            width: 100%;
+        }
+
+            .video-outside video {
+                max-width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                margin: 0 auto;
+            }
+
+
+        .container-inputs {
+            text-align: center;
+        }
+
+        input, textarea, button {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #45a049;
+            }
+    </style>
+</head>
+<body>
+
+    <!-- Logo -->
+    <div class="container text-center">
+        <img src="aidassistlogo.png" alt="Logo" class="logo mt-4 mb-4">
+    </div>
+
+    <!-- Description -->
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="description">
+                    <h2>AidAssist</h2>
+                    <p>Projekt zespołu ma na celu rozwijanie świadomości w zakresie udzielania pierwszej pomocy – zarówno ludziom, jak i zwierzętom. W ramach projektu powstanie aplikacja z bazą informacji oraz interaktywnym przewodnikiem, co będzie pomocne w różnych sytuacjach awaryjnych. Narzędzie będzie kierowane do różnych grup wiekowych oraz do osób o różnym poziomie zaawansowania w obszarze narzędzi cyfrowych.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="container-video">
+                    <div class="description-text">
+                        <h2>Nie wiesz pod jaki adres wezwać pomoc?</h2>
+                        <p>Wychodzimy z rozwiązaniem - podczas dzwonienia na 112 nasza aplikacja automatycznie wyświetli Tobie adres pod którym się znajdujesz, abyś nie musiał/a się o to martwić, lecz pomóc poszkodowanej osobie.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-outside" onclick="goFullscreen(this)">
+        <video autoplay loop muted>
+            <source src="1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="container-video">
+                    <div class="description-text">
+                        <h2>Nie jestes sam/a!</h2>
+                        <p>Po wybraniu numeru 112, aplikacja sama wysyła powiadomienie do osób w pobliżu z naszą lokalizacją i informację, że potrzebujemy ich wsparcia. W ten sposób otrzymamy wsparcie, które w tak ciężkiej sytuacji jest bardzo potrzebne.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-outside" onclick="goFullscreen(this)">
+        <video autoplay loop muted>
+            <source src="3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="container-video">
+                    <div class="description-text">
+                        <h2>Ogranicza Cię strach?</h2>
+                        <p>Wskutek silnego stresu lub strachu, polecenia od operatora mogą nie być do końca jasne, dlatego aplikacja poprzez AI, analizuje naszą rozmowę i wyświetlna nam instrukcje. Mogą one polegać na pokazaniu jak ułożyć poszkodowanego w pozycję boczną bezpieczną, nadawania tempa uciśnięc, bądź instrukcji jak usztywnić kończynę.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-outside" onclick="goFullscreen(this)">
+        <video autoplay loop muted>
+            <source src="2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="container-video">
+                    <div class="description-text">
+                        <h2>Cała wiedza w jednej aplikacji!</h2>
+                        <p>Stworzyliśmy intuicyjny interfejs w postaci modelu 3D człowieka, który po wybraniu miejsca urazu, a następnie jego rodzaju pokaże nam procedure ratunkową. Uważamy, że jest to rozwiązanie przełomowe, które ma na celu maksymalnie ułatwienie obsługi aplikacji. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-outside" onclick="goFullscreen(this)">
+        <video autoplay loop muted>
+            <source src="4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="container-video">
+                    <div class="description-text">
+                        <h2>Zależy nam na Twojej opini!</h2>
+                        <p>Cały czas dopracowujemy naszą aplikację i zależy nam na opiniach innych, więc pozostaw po sobie jedną!</p>
+                    </div>
+                    <div class="container-inputs">
+                        <form>
+                            <input type="email" id="inputEmail" placeholder="Twój email" class="col-10">
+                            <textarea cols="40" rows="5" id="inputData" placeholder="Twoja opinia" class="col-10"></textarea>
+                            <button id="sendButton">Wyślij opinie</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="container-video">
+                    <div class="description-text">
+                        <h2>O twórcach</h2>
+                        <p>Jesteśmy uczniami klasy III w LO im. Tadeusza Kościuszki w Pruszkowie. Zależy nam na powstaniu rozwiązania dotyczącego pomocy osobom poszkodowanym.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="container-video">
+                    <div class="description-text">
+                        <h2>Mikołaj Korzan</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="container-video">
+                    <div class="description-text">
+                        <h2>Maciej Kozak</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="container-video">
+                    <div class="description-text">
+                        <h2>Zbigniew Marchel</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function goFullscreen(id) {
+            var element = id;
+            if (element.mozRequestFullScreen) {
+                element.mozRequestFullScreen();
+            } else if (element.webkitRequestFullScreen) {
+                element.webkitRequestFullScreen();
+            }
+        }
+    </script>
+
+    <script>
+        document.getElementById('sendButton').addEventListener('click', sendData);
+
+        function sendData() {
+            const inputData = document.getElementById('inputData').value;
+            const inputEmail = document.getElementById('inputEmail').value;
+
+            fetch('http://localhost:3000/save', {
+                method: "POST", // *GET, POST, PUT, DELETE, etc.
+                mode: "no-cors", // no-cors, *cors, same-origin
+                cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+                credentials: "same-origin", // include, *same-origin, omit
+                headers: {
+                    "Content-Type": "application/json",
+                    'Access-Control-Allow-Origin': '*'
+                },
+                redirect: "follow", // manual, *follow, error
+                referrerPolicy: "no-referrer",
+                body: JSON.stringify({ data: inputData, email: inputEmail }),
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Handle the response data as needed
+                    console.log('Response:', data);
+                })
+                .catch(error => {
+                    console.error('There was a problem with the fetch operation:', error);
+                });
+        }
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
